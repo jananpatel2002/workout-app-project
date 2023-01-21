@@ -16,7 +16,7 @@ workouts_dict = {
              '4x10 Hammer Curls', '4x10 Bicep Curls'],
     'chest and back': ['4x10 Dumbbell Flat press', '4X10 Barbell Rows', '4X10 Lat Pulldowns', '4X10 Dips',
                        '4X10 Chest flies', '4X10 Rope Pullovers'],
-    'arms and shoulders': ['4x10 Lateral Raises', ]
+    'arms and shoulders': ['4x10 Lateral Raises', '4x10 Incline bicep curls', '4x10 Dumbbell Shoulder press', '4x10 Dips', '4x10 Tricep pushdowns', '4x10 Hammer Curls'],
     'core': ['4x20 crunches', '4x20 sit ups', '4x10 Leg raises', '1 minute plank'],
 
 }

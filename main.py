@@ -1,4 +1,5 @@
 from workouts import workouts_dict  # imports the dictionary (workouts) from workouts.py
+from calculations import Calculations
 
 workout_str = ""
 
@@ -11,12 +12,16 @@ try:
 
         for exercise_type in workouts_dict:
             workout_str += exercise_type.title() + ", "
+            # Adds each workout to a string and also uses
+            # string comprehension to get rid of the comma
         workout_str = workout_str[:-2]
         print(f"\n{workout_str}")
         category = input(f"Welcome {name}! What workout category would you like to do from the list above? ").lower()
         exercises = workouts_dict[category]
+        weight = float(input("What is your weight in pounds? "))
+        calculations = Calculations(weight=weight)
     else:
-        print("Have a nice day!")
+        print(f"\nHave a nice day {name}!")
         exit()
 
 except KeyError:
@@ -25,7 +30,3 @@ except KeyError:
 else:
     for exercise in exercises:
         print(f"\n{exercise}")
-
-# if sChoice != " Yes" and sChoice != " yes" and sChoice != " No" and sChoice != " no":
-# print("Enter yes or no to continue.")
-# exit()
